@@ -10,6 +10,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:id="@+id/bttnVissza"
+        android:background="@drawable/backleaf"
         />
 
     <TextView
@@ -18,29 +19,106 @@
         android:text="   Választható növények:"
         android:textSize="30dp"
         android:layout_marginLeft="40dp"/>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/elsoLayout"
-        android:layout_centerInParent="true"
-        >
+
+    <!-- <ImageView
+         android:id="@+id/imageView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginStart="131dp"
+         android:layout_marginLeft="131dp"
+         android:layout_marginTop="493dp"
+         app:srcCompat="@drawable/plant0" /> -->
+
+     <TableLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="176dp">
+
+         <TableRow
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:padding="10dp">
+
+             <ImageView
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+                 app:srcCompat="@drawable/virag3"
+             />
+             <ImageView
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+                 app:srcCompat="@drawable/tulipa1"
+                 />
+             <ImageView
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+                 app:srcCompat="@drawable/virag1"
+                 />
+         </TableRow>
 
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/masodikLayout"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/elsoLayout">
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
-    </LinearLayout>
+         <TableRow
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:padding="10dp">
+
+             <ImageView
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+                 app:srcCompat="@drawable/virag1"
+                 />             <ImageView
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             app:srcCompat="@drawable/virag1"
+             />             <ImageView
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             app:srcCompat="@drawable/virag1"
+             />
+
+         </TableRow>
+
+         <TableRow
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:padding="10dp"
+             android:gravity="center">
+
+             <ImageView
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+                 app:srcCompat="@drawable/plant0"
+                 />
+
+         </TableRow>
+         <TableRow
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:padding="10dp">
+
+             <ImageView
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+                 app:srcCompat="@drawable/plant0"
+                 />
+
+         </TableRow>
+     </TableLayout>
 
 
 
-</RelativeLayout>
+
+
+
+
+
+ </RelativeLayout>
