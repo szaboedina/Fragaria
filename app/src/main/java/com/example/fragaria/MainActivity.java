@@ -3,53 +3,68 @@ package com.example.fragaria;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
-
-    private Button bttnNovenyNevelo, bttnShop, bttGaleria;
+    private adatbazis adatbazisSegito;
+    private EditText editTextFelh, editTextJelszo;
+    private Button buttonBej,buttonReg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        init();
+        setContentView(R.layout.activity_main);init();
+        buttonReg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,RegisztracioActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
-        bttnNovenyNevelo.setOnClickListener(new View.OnClickListener() {
+        buttonBej.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,NovenyNeveloActivity.class);
+                bejelentkezes();
+
+                Intent intent = new Intent(MainActivity.this,MenuActivity.class);
                 startActivity(intent);
                 finish();
+
             }
-        });
-        bttGaleria.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,GaleriaActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-        bttnShop.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,ShopActivity.class);
-                startActivity(intent);
-                finish();
-            }
+
         });
     }
+
     public void init(){
-        bttnNovenyNevelo = findViewById(R.id.bttnNovenyNevelo);
-        bttGaleria = findViewById(R.id.bttnGaleria);
-        bttnShop = findViewById(R.id.bttnShop);
+        adatbazisSegito= new adatbazis(this);
+        editTextFelh = findViewById(R.id.editTextFelh);
+        editTextJelszo = findViewById(R.id.editTextJelszo);
+        buttonBej = findViewById(R.id.buttonBej);
+        buttonReg=findViewById(R.id.buttonReg);
     }
+    public void bejelentkezes(){
+        Cursor eredmeny= adatbazisSegito.bejeletkezes();
 
+        StringBuffer stringBuffer=new StringBuffer();
+        if (eredmeny!= null&&eredmeny.getCount()>0){
+            while (eredmeny.moveToNext()){
+                stringBuffer.append("ID: "+eredmeny.getString(0)+"\n");
+                stringBuffer.append("E-mail: "+eredmeny.getString(1)+"\n");
+                stringBuffer.append("Jelszó: "+eredmeny.getString(3)+"\n\n");
+            }
+            Toast.makeText(this,"Bejelentkezés sikeres!",Toast.LENGTH_SHORT).show();
+        }
+        else
+            Toast.makeText(this, "Rossz felhasználónéz vagy jelszó!", Toast.LENGTH_SHORT).show();
+        // nemtom=false;
+
+    }
 }
