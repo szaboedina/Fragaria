@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
+
 
     private Button bttnNovenyNevelo, bttnShop, bttGaleria;
 
@@ -16,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
+
         bttnNovenyNevelo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

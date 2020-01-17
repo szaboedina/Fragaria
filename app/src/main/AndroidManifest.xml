@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/logo3"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GaleriaActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".GaleriaActivity" />
         <activity android:name=".ShopActivity" />
         <activity android:name=".NovenyNeveloActivity" />
         <activity android:name=".NovenyValasztoActivity" />
