@@ -46,4 +46,5 @@ public class MainActivity extends AppCompatActivity {
         bttGaleria = findViewById(R.id.bttnGaleria);
         bttnShop = findViewById(R.id.bttnShop);
     }
+
 }
