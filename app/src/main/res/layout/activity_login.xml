@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:gravity="center"
+    android:background="@drawable/bg3"
+    android:orientation="vertical"
+    >
+
+
+    <EditText
+        android:id="@+id/editTextFelh"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="25sp"
+        android:hint="Felhasználónév vagy E-mail"
+        android:background="@drawable/edittext"
+        android:layout_marginBottom="10dp"
+
+        android:textAlignment="center"/>
+
+    <EditText
+
+        android:id="@+id/editTextJelszo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Jelszó"
+        android:textSize="25sp"
+        android:background="@drawable/edittext"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBej"
+        android:text="Bejelentkezés"
+        android:textColor="#1B6F3F"
+        android:padding="10dp"
+        android:background="@drawable/gomb"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#1B6F3F"
+        android:padding="10dp"
+        android:background="@drawable/gomb"
+        android:text="Regisztráció"
+        android:id="@+id/buttonReg"
+
+        />
+
+
+
+
+</LinearLayout>
