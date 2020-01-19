@@ -7,12 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+//import com.google.firebase.database.DatabaseReference;
+//import com.google.firebase.database.FirebaseDatabase;
 
 public class NovenyValasztoActivity extends AppCompatActivity {
-    private FirebaseDatabase fragaria = FirebaseDatabase.getInstance();
-    private DatabaseReference ref ;
+  //  private FirebaseDatabase fragaria = FirebaseDatabase.getInstance();
+   // private DatabaseReference ref ;
     private Button bttnVissza;
 
     @Override

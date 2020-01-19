@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "862958967882-1thsu8fmajohedjs7cbbmgn9bn3l1p0o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fragaria",
+            "certificate_hash": "d13cdf20bea66ea0756784bd6bb85bf1110b4c4f"
+          }
+        },
+        {
           "client_id": "862958967882-gbbd3h7qg5jadrgp2ur2nv6tusom8t3h.apps.googleusercontent.com",
           "client_type": 3
         }
