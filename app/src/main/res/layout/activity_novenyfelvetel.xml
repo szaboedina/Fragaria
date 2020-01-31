@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".novenyfelvetel">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nev"
+        android:id="@+id/nevEditText"
+
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="leiras"
+        android:id="@+id/leirasEditText"
+        android:layout_below="@+id/nevEditText"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="aktualis szint"
+        android:id="@+id/aktualisSzintEditText"
+        android:layout_below="@+id/leirasEditText"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="max szint"
+        android:id="@+id/maxSzintEditText"
+        android:layout_below="@+id/aktualisSzintEditText"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maxSzintEditText"
+        android:text="noveny felvetel"
+        android:id="@+id/novenyfelvetelButton"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/novenyfelvetelButton"
+        android:text=" menu"
+        android:id="@+id/menu"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/novenylista"
+        android:layout_below="@id/novenyfelvetelButton"
+
+
+        />
+
+
+
+
+
+</RelativeLayout>

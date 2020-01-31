@@ -12,7 +12,7 @@ import android.widget.Button;
 public class MenuActivity extends AppCompatActivity {
 
 
-    private Button bttnNovenyNevelo, bttnShop, bttGaleria;
+    private Button bttnNovenyNevelo, bttnShop, bttGaleria, bttnNovenyFelvetel ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,12 +44,21 @@ public class MenuActivity extends AppCompatActivity {
                 finish();
             }
         });
+        bttnNovenyFelvetel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuActivity.this,novenyfelvetel.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
     public void init(){
         bttnNovenyNevelo = findViewById(R.id.bttnNovenyNevelo);
         bttGaleria = findViewById(R.id.bttnGaleria);
         bttnShop = findViewById(R.id.bttnShop);
+        bttnNovenyFelvetel = findViewById(R.id.bttnNovenyFelvetel);
     }
 
 

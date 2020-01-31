@@ -1,52 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuActivity"
     android:orientation="vertical"
-
-    android:background="@drawable/bg2">
-
+    android:background="@drawable/bg">
 
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/fragaria1"
+            />
+
+
+
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center">
 
-        <Button
-            android:id="@+id/bttnShop"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:background="@drawable/bttn1"
-            android:text="Shop"
-            android:layout_marginBottom="30dp"
-
-            android:textColor="#135410"
-
-            />
 
         <Button
-            android:id="@+id/bttnNovenyNevelo"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
+            android:id="@+id/bttnNovenyFelvetel"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
             android:layout_marginBottom="30dp"
-            android:background="@drawable/bttn1"
-            android:text="Kert"
+            android:background="@drawable/button3"
+            android:text="Novenyfelvetel"
+            android:stateListAnimator="@null"
+            android:shadowColor="@android:color/white"
             android:textColor="#135410" />
 
         <Button
-            android:id="@+id/bttnGaleria"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
+            android:id="@+id/bttnNovenyNevelo"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
             android:layout_marginBottom="30dp"
-            android:background="@drawable/bttn1"
-            android:text="Galéria"
+            android:background="@drawable/button3"
+            android:text="Kert"
+            android:stateListAnimator="@null"
+            android:shadowColor="@android:color/white"
+            android:textColor="#135410" />
+
+        <Button
+            android:id="@+id/bttnShop"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:background="@drawable/button3"
+            android:text="Shop"
+            android:layout_marginBottom="30dp"
+            android:stateListAnimator="@null"
+            android:shadowColor="@android:color/white"
             android:textColor="#135410"
 
             />
+
+        <Button
+            android:id="@+id/bttnGaleria"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button3"
+            android:text="Galéria"
+            android:stateListAnimator="@null"
+            android:shadowColor="@android:color/white"
+            android:textColor="#135410"
+
+            />
+
+
     </LinearLayout>
 
 
